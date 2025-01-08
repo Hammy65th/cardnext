@@ -1,5 +1,5 @@
 
-const data: EnemiesArray = []
+
 
 interface Enemy {
     name: string;

@@ -5,7 +5,7 @@ import card from "../../components/page.module.scss";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { useSearchParams } from "next/navigation";
-import {EnemiesArray} from "@/type/type"
+import { EnemiesArray } from "@/type/type"
 
 const Page = () => {
     

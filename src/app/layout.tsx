@@ -4,6 +4,8 @@ import "./globals.css";
 
 import MyNav from "../components/MyNav";
 import Footer from "@/components/footer";
+import { Suspense } from "react";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,8 +30,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        
         <MyNav/>
+        
+        <Suspense>
         {children}
+        </Suspense>
+        
         <Footer/>
       </body>
     </html>
